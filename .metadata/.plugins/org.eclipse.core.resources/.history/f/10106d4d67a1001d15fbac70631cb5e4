@@ -1,0 +1,10 @@
+package stringexample;
+
+public class UserMainCode7 {
+
+	static String str;
+	public static String getFormatedString(String str)
+	{
+		str=str;
+	}
+}

@@ -1,0 +1,27 @@
+package string;
+
+public class Truck extends GroundVehicle {
+	
+	int cargo;
+
+	public Truck(int cargo) {
+		super();
+		this.cargo = cargo;
+	}
+	@Override
+	public void Drive()
+	{
+		super.Drive();
+		System.out.println("Truck is moving");
+	}
+	
+	public int loadCargo(int n)
+	{
+		
+		System.out.println("Cargo is loaded:: "+cargo);
+		
+		return n;
+	}
+	
+
+}

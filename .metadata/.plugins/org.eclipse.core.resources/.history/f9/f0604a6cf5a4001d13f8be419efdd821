@@ -1,0 +1,23 @@
+package string;
+
+public class Car extends GroundVehicle {
+	
+	String noPlates;
+
+	public Car(String noPlates) {
+		super();
+		this.noPlates = noPlates;
+	}
+	
+	public void Drive()
+	{
+		super.Drive();
+		System.out.println("Car is moving");
+	}
+	
+	public void ponderEthicalDilemma()
+	{
+		System.out.println("number plates");
+	}
+
+}

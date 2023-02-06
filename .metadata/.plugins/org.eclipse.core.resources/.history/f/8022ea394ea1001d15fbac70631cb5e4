@@ -1,0 +1,18 @@
+package stringexample;
+
+public class UserMainCode6 {
+
+	public static String negativeString(String str)
+	{
+		Scanner sc=new Scanner(System.in);
+		String strng=str;
+		System.out.println("Enter the positive String with 'is' in it::  ");
+		
+		strng=sc.next();
+		String strng1=strng.replaceAll("is","is not");
+		
+		return strng1;
+		
+	}
+	
+}

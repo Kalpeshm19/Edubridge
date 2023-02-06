@@ -1,0 +1,40 @@
+package filepack;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class WriteDataExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//checked exception
+		
+		
+		
+		/*try {
+			char[] byteVal= {65,66,67,68,69,70};
+			FileWriter fileWriter= new FileWriter("hello.txt",true);
+			fileWriter.write(byteVal,3,2);
+			fileWriter.close();
+		}catch(IOException ex)
+		{
+			System.out.println("---> "+ex.getMessage());
+		}*/
+		
+		try {
+			
+			FileReader reader=new FileReader("Hello.txt");
+			int res=0;
+			do {
+			res = reader.read();//returns -1 if it reaches end of the file
+			System.out.println((char)res);
+			}while(res!=-1);
+			
+			}catch(IOException ex)
+			{
+			System.out.println();
+			}
+	}
+
+}

@@ -1,0 +1,17 @@
+package mapping;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapInterfaceExample {
+
+	
+	public static void main(String[]args) {
+		
+		Map map=new HashMap();
+		map.put("favactress", "Kriti");
+		map.put("favHollyActress", "mallia");
+		map.put("favseries", "Stranger Things");
+		
+	}
+}

@@ -1,0 +1,25 @@
+package stringexample;
+
+import java.util.Scanner;
+
+public class UserMainCode8 {
+
+	
+	public static String printCapitalized(String str) {
+		
+		
+		
+		String words[]=str.split("\\s");
+		String capitalizeWord="";  
+		StringBuilder sb=new StringBuilder();
+		for(String w:words) {
+		} String str1 = sb.substring(0, 1);
+		String afterstr1=sb.substring(1);
+		capitalizeWord+=str1.toUpperCase()+afterstr1+" ";
+		return str;
+	}
+}
+/*for(String w:words){  
+String first=w.substring(0,1);  
+String afterfirst=w.substring(1);  
+capitalizeWord+=first.toUpperCase()+afterfirst+" ";  */

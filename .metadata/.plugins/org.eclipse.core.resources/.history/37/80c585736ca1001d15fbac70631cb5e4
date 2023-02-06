@@ -1,0 +1,20 @@
+package stringexample;
+
+import java.util.Scanner;
+
+public class UserMainCode8 {
+
+	
+	public static String printCapitalized(String str) {
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the sentence::");
+		String str1=sc.nextLine();
+		str1=str;
+		
+		StringBuilder sb=new StringBuilder();
+		str1=sb.substring(0, 1);
+		str1.toUpperCase();
+	}
+}

@@ -1,0 +1,14 @@
+package filepack;
+
+import java.io.File;
+
+public class FileExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		File file=new File("Sample.txt");
+		System.out.println(file.exists());
+	}
+
+}

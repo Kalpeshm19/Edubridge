@@ -1,0 +1,29 @@
+package filepack;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileExample {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		File file=new File("Sample.txt");
+		System.out.println(file.exists());
+		
+		System.out.println(file.canWrite());
+		System.out.println(file.getName());
+		System.out.println(file.getAbsolutePath());
+		System.out.println(file.getFreeSpace());
+		System.out.println(file.getParent());
+		file.createNewFile();
+		
+		System.out.println(file.exists());
+		FileWriter writer=new FileWriter(file);
+		writer.write("Hello this is kalpesh");
+		writer.close();
+		
+	}
+
+}

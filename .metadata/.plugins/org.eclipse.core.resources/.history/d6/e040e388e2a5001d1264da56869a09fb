@@ -1,0 +1,52 @@
+package filepack;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class WriteDataExample {
+
+	public static void main(String[] args) throws IOException{
+		// TODO Auto-generated method stub
+		
+		FileInputStream fileInputStream= new FileInputStream("Myfile.txt");
+		BufferedInputStream bufInput= new BufferedInputStream(fileInputStream);
+		byte[] array=new byte[20];
+		bufInput.read(array);
+		fileInputStream.close();
+		
+		FileOutputStream fout= new FileOutputStream("HelloCopy.txt");
+
+		for(byte b:array)
+		{
+			fout.write(b);
+		}
+		fout.close(); 
+		
+		
+		/*try {
+			char[] byteVal= {65,66,67,68,69,70};
+			FileWriter fileWriter= new FileWriter("hello.txt",true);
+			fileWriter.write(byteVal,3,2);
+			fileWriter.close();
+		}catch(IOException ex)
+		{
+			System.out.println("---> "+ex.getMessage());
+		}*/
+		
+		
+			
+			/*FileReader reader=new FileReader("MyFile.txt");
+			int res=0;
+			do {
+			res = reader.read();//returns -1 if it reaches end of the file
+			System.out.printl((char)res);
+			}while(res!=-1);//? asscii value is -1
+			*/
+			
+			}
+
+	}
+

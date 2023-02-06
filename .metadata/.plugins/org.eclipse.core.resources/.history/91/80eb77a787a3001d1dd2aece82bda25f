@@ -1,0 +1,26 @@
+package Learning;
+
+public class AnonymousClass {
+
+	
+	class A{
+		
+		public void show() {
+			System.out.println("this is in A");
+			
+		}
+		
+		public static void main(String[]args) {
+			
+			A objA=new A() {
+				
+				public void show(){
+					
+					System.out.println("this is me anonymous class");
+					
+				}
+			};
+			objA.show();
+		}
+	}
+}

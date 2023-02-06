@@ -1,0 +1,13 @@
+package stringexample;
+
+public class Main6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str=null;
+		str=UserMainCode6.negativeString(str);
+		System.out.println(str);
+
+	}
+
+}

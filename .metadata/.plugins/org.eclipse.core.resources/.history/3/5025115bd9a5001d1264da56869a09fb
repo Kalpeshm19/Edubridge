@@ -1,0 +1,25 @@
+package filepack;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class WriteDataExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//checked exception
+		
+		
+		
+		try {
+			FileWriter fileWriter= new FileWriter("hello.txt");
+			fileWriter.write(100);//ascii value
+			fileWriter.write(200);
+			fileWriter.close();
+		}catch(IOException ex)
+		{
+			System.out.println("---> "+ex.getMessage());
+		}
+	}
+
+}

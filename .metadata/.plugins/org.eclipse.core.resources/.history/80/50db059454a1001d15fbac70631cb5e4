@@ -1,0 +1,14 @@
+package stringexample;
+
+public class Main6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generateMain m= new Main();
+	      String str1 =  "it is a string";
+	      System.out.println("The given string is: "+str1);
+	      
+		System.out.println("The new string is: "+UserMainCode6.negativeString(str1));
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package Learning;
+
+public class AnonymousClass {
+
+	
+	class A{
+		
+		public void show() {
+			System.out.println("this is in A");
+			
+		}
+	}
+}

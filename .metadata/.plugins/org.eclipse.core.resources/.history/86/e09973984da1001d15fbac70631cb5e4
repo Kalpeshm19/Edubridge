@@ -1,0 +1,14 @@
+package stringexample;
+
+public class UserMainCode2 {
+	
+	
+	StringBuffer sb=new StringBuffer();
+    if(str.length()%2==0)
+    {
+    StringBuffer str;
+	sb.append(str.substring((str.length()/2)-1,(str.length()/2)+1));
+    }
+    return sb.toString();
+}
+}
